@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/processform}" method="post">
+    What is your name: <input type="text" name="name"><br>
+    What is your quest: <input type="text" name="quest"><br>
+
+    <p th:if="${x%2==0}">What is your favorite color?
+     <input type="text" name="q3">
+    </p>
+    <p th:unless="${x%2==0}">What is the airspeed velocity of an unladen swallow?
+    <input type="number" name="q3">
+    </p>
+    <input type="submit" value="Answer">
+</form>
+</body>
+</html>

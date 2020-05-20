@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p th:inline = "text">
+    You are [[${nameval}]] and your quest is [[${questval}]].
+
+    You may proceed across the Bridge! <img alt="bridg"
+                                            height="128" th:src="@{/images/Bridge.png}" width="128">
+</p>
+
+</body>
+</html>
